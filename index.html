@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GHANA TVET SERVICE - Report Card</title>
+
+    <style>
+      body {
+        /* font-family: Arial, sans-serif; */
+        font-family: Poppins;
+        margin: -12rem 2rem;
+        padding: 0;
+        color: #333;
+        overflow-x: hidden;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+        letter-spacing: 2.1px;
+      }
+
+      .header h1 {
+        color: #0066cc;
+        margin-bottom: 5px;
+      }
+
+      .header h2 {
+        margin-top: 0;
+        color: #333;
+      }
+
+      .sch_logo {
+        width: 13%;
+        transform: translate(7rem, 14rem);
+      }
+
+      .comm_logo {
+        width: 15%;
+        transform: translate(45rem, 15rem);
+      }
+
+      .institute-info {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        letter-spacing: 2.1px;
+      }
+
+      .divide {
+        border-top: 1px solid #000;
+        margin: 20px 0;
+      }
+
+      .divider-2 {
+        margin-top: 3rem;
+        border-top: 0.5px solid black;
+      }
+
+      .student-info {
+        margin-bottom: 20px;
+      }
+
+      .student-info > h3 {
+        margin-bottom: 10px;
+        text-align: center;
+        letter-spacing: 2px;
+      }
+
+      .student_name {
+        background-color: black;
+        color: white;
+        padding: 0.4rem 1px;
+        transform: translateY(-19px);
+      }
+
+      .student-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 8rem;
+        margin: 0 auto;
+      }
+
+      .student-details div {
+        flex: 1;
+        width: 850px;
+      }
+
+      .student-details > div:last-child {
+        margin-left: 1rem;
+      }
+
+      .endOfSem {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: -1.2rem;
+        letter-spacing: 2px;
+        background-color: black;
+        color: white;
+        padding: 0.4rem 1px;
+        font-weight: 300;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      tr > th:first-child {
+        background-color: black;
+        color: white;
+      }
+
+      .cores {
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+      }
+
+      .electives {
+        margin-top: -2rem;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      .attendance {
+        margin: 4rem 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      
+      .attendance > p:last-child {
+        margin-left: 5rem;
+      }
+
+      .attended, .totalAtt {
+        border-bottom: 1px black solid;
+        padding: 1px 3rem;
+      }
+      
+      .remarks {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: row;
+        
+        justify-content: space-around;
+        grid-gap: 35rem;
+        margin-top: 2rem;
+      }
+
+      .dash {
+        padding: 1px 9rem;
+        border-bottom: 1px black solid;
+      }
+
+      ._sign {
+        display: block;
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      
+      .subject {
+        text-align: left;
+      }
+      
+      .bold {
+        font-weight: bold;
+      }
+      
+      .watermark {
+        position: fixed;
+        top: 59%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 70px;
+        color: rgba(30, 61, 88, 0.925);
+        z-index: -1;
+        font-weight: bold;
+      }
+
+      .watermark img {
+        opacity: 0.06;
+      }
+      
+      .footer {
+        font-size: 0.6em;
+        text-align: center;
+        margin-top: 3.9rem;
+        border-top: 0.02px slategray solid;
+        color: #666;
+        letter-spacing: 3px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="watermark"><img src="./img/suti.png" /></div>
+
+    <img class="sch_logo" src="./img/suti.png" />
+    <img class="comm_logo" src="./img/ctvet.png" />
+
+    <div class="header">
+      <h1>GHANA TVET SERVICE</h1>
+      <h2>Suame Technical Institute</h2>
+    </div>
+
+    <div class="institute-info">
+      Creativity and Innovation<br />
+      Post Office 803, Kumsai<br />
+      8021227851<br />
+      suametechnical@gmail.com
+    </div>
+
+    <div class="divide divider-1"></div>
+
+    <div class="student-info">
+      <h3 class="student_name">KINGSLEY KOJO USSHER</h3>
+      <div class="student-details">
+        <div>
+          <p><span class="bold">Academic Year:</span> 2025/2026</p>
+          <p><span class="bold">This Term Date:</span> 05/10/2022</p>
+          <p><span class="bold">Next Term Begins:</span> 20/10/2022</p>
+          <p>
+            <span class="bold">Programme:</span> Computer Networking & Hardware
+          </p>
+        </div>
+        <div>
+          <p><span class="bold">Rank</span> 5/16</p>
+          <p><span class="bold">Level:</span> Form 1</p>
+          <p><span class="bold">Semester:</span> A</p>
+          <p><span class="bold">Total Score:</span> 128.00</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divide"></div>
+
+    <h3 class="endOfSem">END OF FIRST SEMESTER REPORT</h3>
+
+    <table class="cores">
+      <thead>
+        <tr>
+          <th>CORE</th>
+          <th>CLASS SCORE (40%)</th>
+          <th>EXAM SCORE (60%)</th>
+          <th>TOTAL SCORE (100%)</th>
+          <th>GRADE</th>
+          <th>REMARKS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="bold subject">English Language</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>A</td>
+          <td>Pass</td>
+        </tr>
+        <tr>
+          <td class="bold subject">Integrated Science</td>
+          <td>0</td>
+          <td>28</td>
+          <td>28</td>
+          <td>B</td>
+          <td>Exceptional</td>
+        </tr>
+        <tr>
+          <td class="bold subject">Mathematics</td>
+          <td>3</td>
+          <td>13</td>
+          <td>13</td>
+          <td>C</td>
+          <td>Average</td>
+        </tr>
+        <tr>
+          <td class="bold subject">Social Studies</td>
+          <td>8</td>
+          <td>20</td>
+          <td>18</td>
+          <td>C+</td>
+          <td>Pass</td>
+        </tr>
+        <tr>
+          <td class="bold subject">Enterpreneurship</td>
+          <td>55</td>
+          <td>25</td>
+          <td>29</td>
+          <td>C+</td>
+          <td>Average</td>
+        </tr>
+        <tr>
+          <td class="bold subject">LCT</td>
+          <td>5</td>
+          <td>35</td>
+          <td>50</td>
+          <td>A*</td>
+          <td>Bright</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="electives">
+      <thead>
+        <tr>
+          <th>ELECTIVE</th>
+          <th>CLASS SCORE (40%)</th>
+          <th>EXAMS SCORE (60%)</th>
+          <th>TOTAL SCORE (100%)</th>
+          <th>GRADE</th>
+          <th>REMARKS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="bold subject">Fabrication Practice</td>
+          <td>0</td>
+          <td>11</td>
+          <td>12</td>
+          <td>B+</td>
+          <td>Very Good</td>
+        </tr>
+        <tr>
+          <td class="bold subject">Welding Technology</td>
+          <td>17</td>
+          <td>19</td>
+          <td>39</td>
+          <td>B+</td>
+          <td>Good</td>
+        </tr>
+        <tr>
+          <td class="bold subject">Allied Processes</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>A</td>
+          <td>Bright</td>
+        </tr>
+        <tr>
+          <td class="bold subject">Technical Drawing</td>
+          <td>12</td>
+          <td>19</td>
+          <td>31</td>
+          <td>F</td>
+          <td>Good</td>
+        </tr>
+        <tr>
+          <td class="bold subject">Practicals</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>A</td>
+          <td>Average</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <div class="attendance">
+      <p><span class="bold">Attendance: </span><span class="attended"> 32</span></p>
+      <p><span class="bold">Out Of: </span><span class="totalAtt"> 70</span></p>
+    </div>
+
+
+    <div class="remarks">
+      <p><span class="dash"></span><span class="bold _sign"> HOD's Signature </span></p>
+      <p><span class="dash"></span><span class="bold _sign"> Principal's Signature </span></p>
+    </div>
+
+
+    <div class="footer">
+      <p>CTVET | SUAME TECHNICAL INSTITUTE | CREATIVITY & INNOVATION</p>
+    </div>
+  </body>
+</html>
